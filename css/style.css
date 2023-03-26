@@ -1,0 +1,258 @@
+/* defaults  */
+
+body{
+  font-family: Verdana, sans-serif;
+}
+
+a:visited,a:link,a:active{
+    text-decoration: none;
+    color:grey;
+  }
+
+
+
+/* animations */
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* Handmade */
+
+#footer{
+    background-color:#84DCCF;
+    display: flex;
+}
+
+#nav{
+  width: 100%;
+  display: flex;
+  /* overflow: hidden;
+  position: fixed; */
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #84DCCF;
+}
+
+@media screen and (max-width:800px){
+  #nav{
+    flex-direction: column;
+  }
+  #nav_form{
+    margin-left:0;
+  }
+
+  /*doesnt work  witchout important - why? icon problem?*/
+  .user_icon{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/*header.php*/
+#logo{
+  padding:0 20px 0 20px;
+  width: 100px;
+  height: 90px;
+}
+
+#nav_element{
+  color:#312F2F ;
+  padding: 10px 20px 10px 20px;
+  font-size: 24px;
+  transition-duration: 0.2s;
+}
+
+#nav_element:hover{
+  color: white;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+}
+
+#nav_element:active{
+  background-color: gray;
+}
+
+#nav_form{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10vw 5px auto;
+}
+
+
+.login_input{
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid #BCCCE0;
+  cursor: text;
+  text-decoration: none;
+  padding: 10px 5px 5px 5px;
+  transition: 0.5s;
+}
+.login_input:focus{
+   outline: none;
+ }
+
+.user_icon{
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+#nav_login_submit{
+  cursor:pointer;
+  border: 1px solid white;
+  background-color: #BCCCE0 ;
+}
+
+/*index.php*/
+#main{
+  padding: 0 2vw 0 2vw;
+}
+
+#index-overlap{
+  z-index:2;
+  opacity: 95%;
+  position: absolute;
+  display:inline-flex ;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+#register_label{
+  display: inline;
+  padding-bottom: 10px;
+  font-size: 26px;
+  color: black;
+}
+
+#register_form{
+  background-color: #84DCCF;
+  padding: 100px;
+  margin: auto auto;
+  width:200px;
+  text-align: end;
+}
+
+
+#column_left{
+  width: 70vw;
+  color: black;
+  background-color: rgba(0, 0, 255, 0.3);
+  float: left;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.article_main{
+  display: flow-root;
+  background-color: white;
+  padding: 14px;
+  margin: 5px;
+  height: auto;
+}
+
+.article_icon{
+  float: left;
+  padding-right: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.article_title{
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.article_content{
+  font-size: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.article_creation{
+  font-size:8px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.article_author{
+  font-size:8px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.article_more{
+  font-weight: bold;
+}
+
+.article_more:hover{
+  color: black;
+}
+
+
+#column_right{
+  width: 20vw;
+  background-color: red;
+  float: right;
+  margin-top: 20px;
+}
+
+/*create.php*/
+
+#article_form{
+  width: 40vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_input{
+  width: 80%;
+}
+
+.article_file{
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#article_text{
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 80%;
+  height: 20vw;
+}
+
+#article_submit{
+  width: 10vw;
+  margin-left: auto;
+}
+
+.error_message{
+  text-align: center;
+  width: auto;
+  margin: 15px;
+  padding: 10px;
+  background: #ff6d6d;
+  border: 3px solid #af4949;
+  font-size: 18px;
+  animation: fadeOut;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.user_table{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.user{
+  border: solid 2px black;
+  margin: 10px;
+}
